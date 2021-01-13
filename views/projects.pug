@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  h2 Here are some of the projects I've done!
+
+  div(class="project")
+    div(class="project-section")
+      div(class="project-info")
+        h3 First Place Presentation - The American Rocketry Competition 2020 (TARC)
+        p Rocketry is all about intentional design and data-driven iteration. In the 2020 season, I led a TARC team that emphasized these tenets. 
+          | Although the main competition was cancelled because of the pandemic, I immediately signed my team up for the virtual presentation competition for a chance 
+          | to show off our hard work over the year. After a slides review and a virtual conference, our presentation won First Place because of our 
+          | analytical approach and professional delivery. 
+          | Download: 
+          a(href="files/tarc-presentation.pdf" download) Slides
+          | , 
+          a(href="files/tarc-presentation.mp4" download) Video
+    div(class="project-section project-embed")
+      video(width="600" controls poster="images/tarc-presentation-poster.png")
+        source(src="/files/tarc-presentation.mp4" type="video/mp4")
+  
+  div(class="project")
+    div(class="project-section")
+      div(class="project-info")
+        h3 Enceladus Lander PDR - NASA L'Space Mission Concept Academy Fall 2020 (MCA)
+        p On the south pole of Saturn's moon Enceladus, curious formations called "Tiger Stripes" emit bursts of ice, snow, and minerals into the air. 
+          | In NASA's L'Space MCA, my team was tasked with designing a lander to investigate these ice plumes. 
+          | For our mission concept, we chose to map the moon's subsurface and measure seismic activity that may contribute to the activity of the plumes. 
+          | In writing the Preliminary Design Review for the mission, I focused on the lander communication systems 
+          | and ensuring redundancies in all aspects of the mission design. 
+          | Download: 
+          a(href="files/t-t31-pdr.pdf" download) PDR
+    div(class="project-section project-embed")
+      iframe(src="files/t-t31-pdr.pdf" width="600" height="371.25")

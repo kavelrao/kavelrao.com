@@ -1,14 +1,17 @@
 extends layout
 
 block content
-  h1= title
-  p 
-    a(href="/files/resume.pdf" download) resum&eacute;
-    | &emsp;
-    a(href="https://github.com/kavelrao") github
-    | &emsp;
-    a(href="kavelrao@uw.edu") kavelrao@uw.edu
   p Hi, welcome to my website!
-  | I'm a freshman in the University of Washington College of Engineering passionate about software and aerospace technology.
-  p I'm also a scholar of the Washington NASA Space Grant Consortium and a member of the Husky Satellite Lab. 
 
+  div(class="image-row")
+    img(src="/images/hiking-pic.jpg" height="250")
+    img(src="/images/rocket-pic.jpg" height="250")
+    img(src="/images/grad-pic.jpg" height="250")
+
+  p I'm a freshman in the University of Washington College of Engineering passionate about software and aerospace technology.
+  p I'm also a scholar of the Washington NASA Space Grant Consortium and a member of the Husky Satellite Lab.
+  p Some of my other interests are 
+    a(href="https://www.wta.org/@@backpacks/scrnm-kavellier" target="_blank") hiking
+    |  and 
+    a(href="https://www.instagram.com/kavel.rao.photo/" target="_blank") photography
+    | !
