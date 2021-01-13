@@ -15,6 +15,14 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 app.use(helmet());
+app.use(
+  helmet.contentSecurityPolicy({
+    directives: {
+      ...helmet.contentSecurityPolicy.getDefaultDirectives(),
+      "frame-src": ["'self'", "https://www.youtube.com"],
+    },
+  })
+);
 app.use(compression());
 app.use(logger('dev'));
 app.use(express.json());
