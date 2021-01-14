@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
 /* GET resume. */
 router.get('/resume', function(req, res, next) {
-  res.sendFile('resume.pdf', { root: 'public/files' } );
+  res.sendFile('Kavel-Rao_Resume.pdf', { root: 'public/files' } );
 });
 
 router.get('/projects', function(req, res, next) {
