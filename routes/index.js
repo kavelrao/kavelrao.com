@@ -15,4 +15,8 @@ router.get('/projects', function(req, res, next) {
   res.render('projects', {  });
 });
 
+router.get('/frogtime', function(req, res, next) {
+  res.redirect('https://discord.com/api/oauth2/authorize?client_id=805234968989138974&permissions=116736&scope=bot');
+});
+
 module.exports = router;
